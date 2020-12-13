@@ -1,0 +1,7 @@
+#aAdvanced Dungeons & Dragons Battlesystemutocomplete {
+  height: 100px;
+  max-height: 100px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

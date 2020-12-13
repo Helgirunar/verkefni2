@@ -1,0 +1,16 @@
+<?php
+use \Drupal\Core\Routing\RouteMatchInterface;
+
+function search_engine_bgg_and_db_help($route_name, RouteMatchInterface $route_match){
+  switch ($route_name) {
+    case 'help.page.search_engine_bgg_and_db':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is a project for the course Development of Open Source Web Software') .'</p>';
+
+      return $output;
+
+    default:
+
+  }
+}

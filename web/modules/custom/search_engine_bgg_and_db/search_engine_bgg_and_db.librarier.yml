@@ -1,0 +1,4 @@
+search_engine_bgg_and_db.form:
+  css:
+    theme:
+      Drupal\search_engine_bgg_and_db\Form\searchform.css: {}

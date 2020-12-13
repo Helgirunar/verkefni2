@@ -1,0 +1,5 @@
+services:
+  search_engine_bgg_and_db.salutation:
+    class: Drupal\search_engine_bgg_and_db\SearchEngineBggAndDbSalutation
+    tags:
+      - {name: tag_name}

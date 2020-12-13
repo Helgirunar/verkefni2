@@ -1,0 +1,26 @@
+search_engine_bgg_and_db.search:
+  path: '/search_bgg_db'
+  defaults:
+    _controller: Drupal\search_engine_bgg_and_db\Controller\SearchEngineBggAndDbController::search
+    _title: 'Search engine route'
+  requirements:
+    _permission: 'access content'
+search_engine_bgg_and_db.form:
+  path: '/simple_box'
+  defaults:
+    _form: '\Drupal\search_engine_bgg_and_db\Form\searchForm'
+    _title: 'The autocomplete form!'
+    requirements:
+      _permission: 'access content'
+  options:
+    parameters:
+      controller:
+        type: entity:controller
+search_engine_bgg_and_db.autocomplete.search_box:
+  path: '/search_bgg_db_auto'
+  defaults:
+    _controller: Drupal\search_engine_bgg_and_db\Controller\SearchEngineBggAndDbController::autocomplete
+    _title: 'Search engine autocomplete route'
+    _format: json
+  requirements:
+    _permission: 'access content'
